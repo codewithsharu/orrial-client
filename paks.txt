@@ -1,0 +1,14 @@
+  "react-image-magnify": "latest-compatible-version",
+    "react-cursor-position": "latest-compatible-version",
+
+
+
+    // Example within the Checkout component's render method
+{items.map(item => (
+  <div key={item.id}> {/* Assuming 'item' has a unique 'id' property */}
+    {item.name} - ${item.price}
+  </div>
+))}???
+
+
+
