@@ -1,0 +1,154 @@
+%-------------------------
+% Resume in Latex
+% Author : Shareen Dandasi
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+% Professional color scheme
+\definecolor{primary}{HTML}{000000}    % Black
+\definecolor{secondary}{HTML}{333333}   % Dark gray
+\definecolor{accent}{HTML}{666666}      % Medium gray
+\definecolor{text}{HTML}{000000}        % Black text
+\definecolor{lighttext}{HTML}{444444}   % Dark gray text
+\definecolor{background}{HTML}{FFFFFF}  % White background
+
+\colorlet{name}{primary}
+\colorlet{tagline}{secondary}
+\colorlet{heading}{primary}
+\colorlet{headingrule}{secondary}
+\colorlet{accent}{accent}
+\colorlet{emphasis}{text}
+\colorlet{body}{lighttext}
+
+% Professional font
+\usepackage[default]{sourcesanspro}
+\usepackage[T1]{fontenc}
+
+% Adjust margins for professional spacing
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Professional section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries\color{heading}
+}{}{0em}{}[\color{headingrule}\titlerule \vspace{-5pt}]
+
+% Ensure PDF is machine readable
+\pdfgentounicode=1
+
+% Professional custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large\color{primary}#1} & \textbf{\small\color{secondary} #2} \\
+      \textit{\large\color{lighttext}#3} & \textit{\small\color{lighttext} #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small\color{primary}#1 & \textbf{\small\color{secondary} #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\begin{document}
+
+% Professional header
+\begin{center}
+    {\Huge\color{primary}\textbf{Shareen Dandasi}} \\ \vspace{2pt}
+    {\color{lighttext}Tekkali, Andhra Pradesh} \\ \vspace{2pt}
+    \small 
+    \href{tel:#}{\color{secondary}\raisebox{-0.1\height}\faPhone\ +91-7816072525} ~ 
+    \href{mailto:dodshareen@gmail.com}{\color{secondary}\raisebox{-0.2\height}\faEnvelope\ dodshareen@gmail.com} ~ 
+    \href{https://www.linkedin.com/in/shareen-dandasi-20a271272/}{\color{secondary}\raisebox{-0.2\height}\faLinkedinSquare\ LinkedIn} ~
+    \href{https://github.com/codewithsharu}{\color{secondary}\raisebox{-0.2\height}\faGithub\ GitHub}
+\end{center}
+
+% Professional skills section
+\section{TECHNICAL SKILLS}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{\normalsize\color{primary}Languages:} \normalsize\color{lighttext}{Python, C++, JavaScript, SQL} \\
+    \vspace*{0.2cm}
+    \textbf{\normalsize\color{primary}Frontend:} \normalsize\color{lighttext}{HTML5, CSS3, React.js, Bootstrap, JavaScript} \\
+    \vspace*{0.2cm}
+    \textbf{\normalsize\color{primary}Backend:} \normalsize\color{lighttext}{Node.js, Express.js, RESTful APIs, JSON, JWT, Middleware, Postman} \\
+    \vspace*{0.2cm}
+    \textbf{\normalsize\color{primary}Database:} \normalsize\color{lighttext}{MongoDB, MySQL, SQL Server} \\
+    \vspace*{0.2cm}
+    \textbf{\normalsize\color{primary}Version Control:} \normalsize\color{lighttext}{Git, GitHub} \\
+  }}
+\end{itemize}
+
+% Professional certifications section
+\section{CERTIFICATIONS}
+\begin{itemize}[leftmargin=0.15in, label={$\sbullet[.75]$}]
+    \item \href{https://learn.microsoft.com/api/credentials/share/en-us/dandasishareen-7680/8FB109E6E77D30E1?sharingId=8BFEE69B80407A6B}{\color{secondary}Microsoft Certified: Azure Fundamentals (AZ-900)}
+    \item \href{https://www.hackerrank.com/certificates/145692f4813f}{\color{secondary}React (Intermediate) - HackerRank Skills Certification}
+    \item \href{https://www.credly.com/badges/b5d9dc73-e57b-4618-9d87-cac2c07031ec}{\color{secondary}MongoDB Associate Developer - Credly}
+    \item \href{https://www.credly.com/earner/earned/badge/d7ccc207-555e-4107-95c8-b3a27b2cb899}{\color{secondary}Git Foundations - Credly}
+    \item \href{https://www.credly.com/earner/earned/badge/943f85c9-6342-481a-9392-13222f47c7f5}{\color{secondary}Git Advanced Security - Credly}
+\end{itemize}
+
+% Professional personal information section
+\section*{Personal Information}
+\begin{tabular}{@{}p{0.45\textwidth} p{0.45\textwidth}@{}}
+\textbf{\color{primary}Father's Name:} \color{lighttext}D.venkat  & \textbf{\color{primary}Date of Birth:} \color{lighttext}Jan 24, 2004 \\
+\textbf{\color{primary}Gender:} \color{lighttext}Male & \textbf{\color{primary}Nationality:} \color{lighttext}Indian \\
+\textbf{\color{primary}Address:} \color{lighttext}Tekkali, Srikakulam, AP, India & \textbf{\color{primary}Languages:} \color{lighttext}Telugu, Hindi, English \\
+\end{tabular}
+
+% Professional declaration section
+\vspace{0.5cm}
+\section*{Declaration}
+\color{lighttext}I hereby declare that all the information furnished above is true to the best of my knowledge and belief. I understand that any misrepresentation or omission of facts may lead to rejection of my candidature or termination of services, if selected.
+
+\vspace{0.4cm}
+\begin{tabular}{@{}p{0.45\textwidth} p{0.45\textwidth}@{}}
+\textbf{\color{primary}Date:} \color{lighttext}14/06/2025 & \textbf{\color{primary}Signature:} \hspace{2cm} \\
+& \color{lighttext}(Shareen Dandasi) \\
+\end{tabular}
+
+\end{document}
